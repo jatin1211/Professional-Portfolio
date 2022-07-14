@@ -58,12 +58,16 @@ header a{
 .intro h2{
     color:green;
     font-size: 25px;
+    padding:5px;
+    font-size:40px;
+    
 }
 
 .intro{
     display: flex;
     justify-content: space-between;
     padding:0 20px 0 0;
+   
 }
 .contact li{
     list-style: none;
@@ -72,11 +76,13 @@ header a{
     font-size: 25px;
     
 }
+
 #work{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     
 }
+
 .intro p{
     margin:30px;
     text-align: center;
@@ -93,11 +99,7 @@ header a{
     background-attachment: fixed;
     background-position: 80%;
 }
-.intro h2{
-    padding:5px;
-    font-size:40px;
-     
-}
+
 
 .data{
     background-color: antiquewhite;
@@ -128,21 +130,22 @@ header a{
 
 /* media screen for different screen sizes*/
 @media screen and (max-width:768px){
+    body{
+        background-color: aqua;
+    }
     header{
-    padding-bottom: 0;
-    justify-content: center;
     position: relative;
     }
+
     #photo img{
-        width:200px;
+        width:auto;
         height: 200px;
     }
     .contact{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    
-    }
 
+    }
 }
 
