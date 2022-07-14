@@ -35,12 +35,19 @@ header nav ul li{
     text-decoration: none;
 
 }
+header a{
+    text-decoration: none;
+    color:green;
+}
 
 
 .intro img{
     width:250px;
     height:200px;
+    
+   
 }
+
 .contact{
     display:flex;
     justify-content: space-between;
@@ -56,17 +63,25 @@ header nav ul li{
 .intro{
     display: flex;
     justify-content: space-between;
+    padding:0 20px 0 0;
 }
 .contact li{
     list-style: none;
     justify-content: space-evenly;
     padding:25px;
+    font-size: 25px;
+    
+}
+#work{
+    display: flex;
+    flex-wrap: wrap;
     
 }
 .intro p{
     margin:30px;
     text-align: center;
     padding:10px;
+    font-size: 25px;
 }
 #photo{
     padding:20px 50px;
@@ -83,10 +98,51 @@ header nav ul li{
     font-size:40px;
      
 }
-.work{
-    border:1.5px solid black;
+
+.data{
+    background-color: antiquewhite;
 }
 .text{
     text-align: center;
+    font-size: 25px;
+
+}
+.apps img{
+    width:250px;
+    height:250px;
+    border:1.5px solid black;
+    
+}
+#work-1 img{
+    width:300px;
+    height: 300px;
+}
+#photo img{
+    width:420px;
+    height:500px;
+}
+.apps:hover{
+    transform: scale(1.25);
+
+}
+
+/* media screen for different screen sizes*/
+@media screen and (max-width:768px){
+    header{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    }
+    #photo img{
+        width:200px;
+        height: 200px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+
 }
 
